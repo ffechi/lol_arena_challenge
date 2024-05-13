@@ -109,7 +109,7 @@ BEGIN
 	WHERE c.id IN (SELECT id_campeon
 					   FROM primeros_puestos);
 					   
-	SELECT COUNT(*) AS Numero_De_Personajes_Restantes
+	SELECT COUNT(*) AS Numero_De_Personajes_Conseguidos
 	FROM campeones c LEFT JOIN primeros_puestos pp ON c.id = pp.id_campeon
 	WHERE c.id IN (SELECT id_campeon
 					   FROM primeros_puestos);
